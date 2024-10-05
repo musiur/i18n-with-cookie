@@ -12,6 +12,7 @@ export const getDictionary = async () => {
     try {
         return await dictionaryFn();
     } catch (error) {
+        console.log(error)
         throw new Error(`Error while loading dictionary for locale 'sw.js' not found!`);
     }
 };
